@@ -1,3 +1,5 @@
+// ES7+ React/Redux/React-Native Snippets extension:
+// rfc+enter: for react's function based component
 import React from 'react'
 import PropTypes from 'prop-types'
 
