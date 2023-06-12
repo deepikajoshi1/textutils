@@ -3,9 +3,12 @@ import React, {useState} from 'react';
 
 export default function TextForm(props) {
   const handleUpClick = ()=>{
-setText("You have clicked on handleUpClick")
+    let newText = text.toUpperCase();
+setText(newText)
   }
-  const handleOnChange= ()=>{
+
+  const handleOnChange= (event)=>{
+    setText(event.target.value);
 
   }
   // Declare a new state variable, which we'll call "count" and its update-function is setCount.
@@ -17,7 +20,7 @@ setText("You have clicked on handleUpClick")
         <label for="myBox" class="form-label">
          <h1>{props.heading}</h1>
         </label>
-        <textarea class="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+        <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
         <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
       </div>
     </div>
