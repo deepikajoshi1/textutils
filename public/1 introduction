@@ -1,1 +1,8 @@
 name = "deepika"
+shortcuts: div.container+enter = shortcut for <div className="container"></div>
+
+
+extension:ES7 React/Redux/GraphQL/React-Native snippets
+// rfc+enter: for react's function based component
+
+with auto rename extension : <h2></h2>

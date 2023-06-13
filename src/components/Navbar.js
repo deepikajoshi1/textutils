@@ -1,8 +1,8 @@
-// ES7+ React/Redux/React-Native Snippets extension:
-// rfc+enter: for react's function based component
-import React from 'react'
-import PropTypes from 'prop-types'
+// extension:ES7 React/Redux/GraphQL/React-Native snippets
 
+// rfc+enter: for react's function based component
+import React from "react";
+import PropTypes from "prop-types";
 
 export default function Navbar(props) {
   return (
@@ -35,7 +35,7 @@ export default function Navbar(props) {
                   {props.aboutText}
                 </a>
               </li>
-              </ul>
+            </ul>
 
             <form className="d-flex" role="search">
               <input
@@ -48,22 +48,21 @@ export default function Navbar(props) {
                 Search
               </button>
             </form>
-            </div>
+          </div>
         </div>
       </nav>
-
     </div>
-  )
+  );
 }
 // Adding prop types
 Navbar.propTypes = {
   // Pts+enter
   title: PropTypes.string.isRequired,
-  aboutText: PropTypes.string.isRequired
-}
+  aboutText: PropTypes.string.isRequired,
+};
 
 // Adding default Props
 Navbar.defaultProps = {
-  title: 'Set title here',
-  aboutText: 'About text here'
+  title: "Set title here",
+  aboutText: "About text here",
 };
